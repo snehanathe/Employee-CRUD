@@ -1,0 +1,45 @@
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #110113;
+    text-align: center;
+}
+th {
+    background-color: #c66ce4;
+}
+input {
+    width: 90%;
+    color:black;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid black;
+}
+input 
+{
+    color:rgb(12, 11, 11);
+}
+#addRowButton {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: #966214e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#addRowButton:hover {
+    background-color: #0056b3;
+}
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+body{
+    background-color:rgb(246, 187, 248);
+}
