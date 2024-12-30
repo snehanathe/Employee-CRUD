@@ -19,7 +19,13 @@ input {
     box-sizing: border-box;
     background-color: white;
     border: 1px solid black;
+    
 }
+
+th:nth-child(3), td:nth-child(3) { 
+    width: 120px; 
+  }
+
 input 
 {
     color:rgb(12, 11, 11);
@@ -42,4 +48,10 @@ h2 {
 }
 body{
     background-color:rgb(246, 187, 248);
+}
+#error-message {
+    position: relative; /* Default positioning */
+    margin-top: 10px; /* Adds space above the error */
+    text-align: center; /* Center-aligns the error text */
+    color: red;
 }

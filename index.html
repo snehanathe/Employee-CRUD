@@ -12,6 +12,7 @@
 </head>
 <body>
     <h1 style="text-align:center;">Employee Data </h1>
+    <div id="error-message" style="color: red; text-align: center;"></div>
     <form autocomplete="off">
     <table id="employeeInputTable">
         <thead>
@@ -28,19 +29,19 @@
         </thead>
         <tbody>
             <tr>
-                <td><input type="number" id="empid" placeholder="Enter ID"></td>
+                <td><input type="number" id="empid" placeholder="Enter ID" min="1" maxlength="3"></td>
                 <td><input type="text" id="empname" placeholder="Enter Name"></td>
                 <td><input type="date" id="dob" placeholder="YYYY-MM-DD" min="1960-01-01" max="2024-12-31"></td>
                 <td><input type="text"id="age" click="calculateAge()" readonly></td>
                 <td><input type="text" id="phone" placeholder="Enter Phone" maxlength="10"></td>
-                <td><input type="text" id="address" placeholder="Enter Address"></td>
-                <td><input type="number" id="salary" placeholder="Enter Salary"></td>
+                <td><input type="text" id="address" placeholder="Enter Address" maxlength="70"></td>
+                <td><input type="number" id="salary" placeholder="Enter Salary" maxlength="5" min="5000"></td>
                 <td><button type="button" id="addRowButton">Add</button></td>
             </tr>
         </tbody>
-        <div id="error-message" style="color: red; text-align: center;"></div>
 
     </table>
+    
 </form>
 
     <!-- Employee Details Table -->
@@ -62,5 +63,6 @@
             
         </tbody>
     </table>
+ 
 </body>
 </html>
